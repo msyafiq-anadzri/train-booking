@@ -1,0 +1,14 @@
+<!-- booking_confirmation.html -->
+{% extends 'ticket_booking/base.html' %}
+
+{% block title %}Booking Confirmation{% endblock %}
+
+{% block content %}
+<h1>Booking Confirmation</h1>
+<p>Your booking has been confirmed!</p>
+<p>Booking ID: {{ booking.id }}</p>
+<p>Seat: {{ booking.seat.seat_number }}</p>
+<p>Train: {{ booking.seat.coach.train.train_number }}</p>
+<p>Status: {{ booking.status }}</p>
+<a href="{% url 'home' %}" class="btn btn-primary">Return to Home</a>
+{% endblock %}

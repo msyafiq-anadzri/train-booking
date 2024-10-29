@@ -1,0 +1,246 @@
+{
+    "origins": [
+        {"name": "Johor"},
+        {"name": "Kedah"},
+        {"name": "Kelantan"},
+        {"name": "Melaka"},
+        {"name": "Negeri Sembilan"},
+        {"name": "Pahang"},
+        {"name": "Penang"},
+        {"name": "Perak"},
+        {"name": "Perlis"},
+        {"name": "Selangor"},
+        {"name": "Terengganu"},
+        {"name": "Kuala Lumpur"},
+        {"name": "Putrajaya"}
+    ],
+    "destinations": [
+        {"name": "Johor"},
+        {"name": "Kedah"},
+        {"name": "Kelantan"},
+        {"name": "Melaka"},
+        {"name": "Negeri Sembilan"},
+        {"name": "Pahang"},
+        {"name": "Penang"},
+        {"name": "Perak"},
+        {"name": "Perlis"},
+        {"name": "Selangor"},
+        {"name": "Terengganu"},
+        {"name": "Kuala Lumpur"},
+        {"name": "Putrajaya"}
+    ],
+    "trains": [
+        {
+            "name": "Express South",
+            "train_type": "premium",
+            "origin": 1,
+            "destination": 12,
+            "departure_time": "2024-11-01T08:00:00",
+            "arrival_time": "2024-11-01T12:00:00",
+            "price": "120.00",
+            "coaches": [
+                {
+                    "coach_number": "C1",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C2",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C3",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C4",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C5",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C6",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                }
+            ]
+        },
+        {
+            "name": "Northern Star",
+            "train_type": "business",
+            "origin": 7,
+            "destination": 12,
+            "departure_time": "2024-11-02T09:00:00",
+            "arrival_time": "2024-11-02T13:30:00",
+            "price": "100.00",
+            "coaches": [
+                {
+                    "coach_number": "C1",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C2",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C3",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C4",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C5",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C6",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                }
+            ]
+        },
+        {
+            "name": "Coastal Express",
+            "train_type": "travel",
+            "origin": 11,
+            "destination": 10,
+            "departure_time": "2024-11-03T07:30:00",
+            "arrival_time": "2024-11-03T14:00:00",
+            "price": "80.00",
+            "coaches": [
+                {
+                    "coach_number": "C1",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C2",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C3",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C4",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C5",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C6",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                }
+            ]
+        },
+        {
+            "name": "Central Economy",
+            "train_type": "economy",
+            "origin": 12,
+            "destination": 5,
+            "departure_time": "2024-11-01T06:00:00",
+            "arrival_time": "2024-11-01T08:30:00",
+            "price": "60.00",
+            "coaches": [
+                {
+                    "coach_number": "C1",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C2",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C3",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C4",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C5",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                },
+                {
+                    "coach_number": "C6",
+                    "seats": [{"seat_number": "1"}, {"seat_number": "2"}, {"seat_number": "3"}, {"seat_number": "4"}, {"seat_number": "5"},
+                              {"seat_number": "6"}, {"seat_number": "7"}, {"seat_number": "8"}, {"seat_number": "9"}, {"seat_number": "10"},
+                              {"seat_number": "11"}, {"seat_number": "12"}, {"seat_number": "13"}, {"seat_number": "14"}, {"seat_number": "15"},
+                              {"seat_number": "16"}, {"seat_number": "17"}, {"seat_number": "18"}, {"seat_number": "19"}, {"seat_number": "20"}]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<!-- select_seat.html -->
+{% extends 'ticket_booking/base.html' %}
+
+{% block title %}Select Seat{% endblock %}
+
+{% block content %}
+<h1>Select Seat: {{ seat.seat_number }}</h1>
+<p>Are you sure you want to lock this seat?</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Lock this Seat</button>
+</form>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "ticket_booking/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Select a Coach</h2>
+
+    <div class="mb-3">
+        <a href="{% url 'train_info' train.id %}" class="btn btn-secondary">Back to Train Info</a>
+    </div>
+
+    {% if coaches %}
+        <div class="row">
+            {% for coach in coaches %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coach {{ coach.coach_number }}</h5>
+                        <p class="card-text">Seats Available: {{ coach.available_seats }}</p>
+                        <a href="{% url 'select_seat' coach.id %}" class="btn btn-primary">Select Coach</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-warning" role="alert">
+            No coaches available for this train.
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "ticket_booking/base.html" %}
+{% load form_extras %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Search for Trains</h2>
+    
+    <!-- Display feedback message if no trains are found -->
+    {% if messages %}
+        <div class="alert alert-info">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'home' %}">
+        {% csrf_token %}
+        
+        <!-- Train Type Selection -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="train_type" class="form-label">Train Type</label>
+                {{ form.train_type|add_class:"form-select" }}
+            </div>
+            <div class="col-md-6">
+                <label for="pax" class="form-label">Number of Passengers</label>
+                {{ form.pax|add_class:"form-control" }}
+            </div>
+        </div>
+
+        <!-- Origin and Destination Selection -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="origin" class="form-label">Origin</label>
+                {{ form.origin|add_class:"form-select" }}
+            </div>
+            <div class="col-md-6">
+                <label for="destination" class="form-label">Destination</label>
+                {{ form.destination|add_class:"form-select" }}
+            </div>
+        </div>
+
+        <!-- Date Pickers for Departure and Return Dates -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="departure_date" class="form-label">Departure Date</label>
+                {{ form.departure_date|add_class:"form-control" }}
+            </div>
+            <div class="col-md-6">
+                <label for="return_date" class="form-label">Return Date (optional)</label>
+                {{ form.return_date|add_class:"form-control" }}
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Search Trains</button>
+        </div>
+    </form>
+
+    <!-- Available Trains Table -->
+    {% if trains %}
+    <h3 class="mt-4">Available Trains</h3>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Train Name</th>
+                <th>Train Type</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Available Seats</th>
+                <th>Select Train</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for train in trains %}
+                <tr>
+                    <td>{{ train.name }}</td>
+                    <td>{{ train.get_train_type_display }}</td>
+                    <td>{{ train.origin }}</td>
+                    <td>{{ train.destination }}</td>
+                    <td>{{ train.departure_time }}</td>
+                    <td>{{ train.available_seats }}</td>
+                    <td>
+                        <a href="{% url 'select_train' train.id %}" class="btn btn-primary">Select</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No trains available at the moment.</p>
+{% endif %}
+
+</div>
+{% endblock %}

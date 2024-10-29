@@ -1,0 +1,16 @@
+<!-- select_train.html -->
+{% extends 'ticket_booking/base.html' %}
+
+{% block title %}Select Train{% endblock %}
+
+{% block content %}
+<h1>Select Train: {{ train.train_number }}</h1>
+<h2>Coaches</h2>
+<ul class="list-group mt-4">
+    {% for coach in coaches %}
+        <li class="list-group-item">
+            <a href="{% url 'select_coach' coach.id %}">Coach {{ coach.coach_number }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

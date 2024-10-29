@@ -1,0 +1,13 @@
+<!-- confirm_payment.html -->
+{% extends 'ticket_booking/base.html' %}
+
+{% block title %}Confirm Payment{% endblock %}
+
+{% block content %}
+<h1>Confirm Payment</h1>
+<p>Amount: ${{ booking.total_amount }}</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Pay Now</button>
+</form>
+{% endblock %}

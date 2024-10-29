@@ -1,0 +1,34 @@
+{% extends "ticket_booking/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">{{ train.name }} Information</h2>
+
+    <div class="train-details">
+        <p><strong>Type:</strong> {{ train.get_train_type_display }}</p>
+        <p><strong>Origin:</strong> {{ train.origin.name }}</p>
+        <p><strong>Destination:</strong> {{ train.destination.name }}</p>
+        <p><strong>Departure Time:</strong> {{ train.departure_time }}</p>
+        <p><strong>Arrival Time:</strong> {{ train.arrival_time }}</p>
+        <p><strong>Price per Ticket:</strong> ${{ train.price }}</p>
+        <p><strong>Total Coaches:</strong> {{ total_coaches }}</p>
+        <p><strong>Total Available Seats:</strong> {{ total_available_seats }}</p>
+    </div>
+
+    <!-- Select Train Button -->
+    <div class="d-flex justify-content-center mt-4">
+        {% if total_available_seats >= pax %}
+            <a href="{% url 'select_coach' train.id %}" class="btn btn-primary">Select Train</a>
+        {% else %}
+            <div class="alert alert-danger text-center" role="alert">
+                Not enough seats available for the requested number of passengers ({{ pax }}).
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Back Button -->
+    <div class="d-flex justify-content-center mt-3">
+        <a href="{% url 'home' %}" class="btn btn-secondary">Back to Search</a>
+    </div>
+</div>
+{% endblock %}

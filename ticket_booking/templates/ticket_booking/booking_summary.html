@@ -1,0 +1,15 @@
+<!-- booking_summary.html -->
+{% extends 'ticket_booking/base.html' %}
+
+{% block title %}Booking Summary{% endblock %}
+
+{% block content %}
+<h1>Booking Summary</h1>
+<p>Seat: {{ booking.seat.seat_number }}</p>
+<p>Train: {{ booking.seat.coach.train.train_number }}</p>
+<p>Total Amount: ${{ booking.total_amount }}</p>
+<form method="POST" action="{% url 'confirm_payment' booking.id %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success">Confirm Payment</button>
+</form>
+{% endblock %}

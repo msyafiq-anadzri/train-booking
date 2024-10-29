@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seating Plan</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Seating Plan for Train {{ train.train_number }}</h2>
+    <div id="seats">
+        {% for coach in coaches %}
+            <h3>Coach {{ coach.coach_number }}</h3>
+            <div>
+                {% for seat in coach.seat_set.all %}
+                    <button id="seat_{{ seat.id }}" onclick="selectSeat({{ seat.id }})">{{ seat.seat_number }}</button>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <script>
+        const ws = new WebSocket(`ws://${window.location.host}/ws/booking/{{ train.id }}/`);
+
+        ws.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            if (data.action === 'lock') {
+                document.getElementById(`seat_${data.seat_id}`).disabled = true;
+            } else if (data.action === 'unlock') {
+                document.getElementById(`seat_${data.seat_id}`).disabled = false;
+            }
+        };
+
+        function selectSeat(seatId) {
+            ws.send(JSON.stringify({'action': 'lock', 'seat_id': seatId}));
+        }
+    </script>
+</body>
+</html>
